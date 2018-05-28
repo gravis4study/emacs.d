@@ -88,19 +88,19 @@
 (require 'init-markdown)
 (require 'init-csv)
 (require 'init-erlang)
-(require 'init-javascript)
-(require 'init-php)
+;;(require 'init-javascript)
+;;(require 'init-php)
 (require 'init-org)
 (require 'init-nxml)
-(require 'init-html)
-(require 'init-css)
+;;(require 'init-html)
+;;(require 'init-css)
 (require 'init-haml)
 (require 'init-http)
-(require 'init-python)
-(require 'init-haskell)
+;;(require 'init-python)
+;;(require 'init-haskell)
 (require 'init-elm)
 (require 'init-purescript)
-(require 'init-ruby)
+;;(require 'init-ruby)
 (require 'init-rails)
 (require 'init-sql)
 (require 'init-rust)
@@ -171,8 +171,12 @@
 ;;----------------------------------------------------------------------------
 (require 'init-local nil t)
 
+(load-theme 'leuven)
 
+(add-hook 'text-mode-hook
+          (lambda () (set-input-method "german-prefix")))
 
+(add-hook 'org-mode-hook (lambda () (setq truncate-lines nil)))
 (provide 'init)
 
 ;; Local Variables:

@@ -1,0 +1,4 @@
+# key: co
+# name: commit
+# --
+git commit -a -m "$1"

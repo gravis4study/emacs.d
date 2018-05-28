@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: commitinlatex
+# key: c
+# --
+%% $1       %%
